@@ -33,8 +33,14 @@ public class Arrays {
 		return dataStrings;
 	}
 	
-	public static String[] concatenate(String[] a, String[] b) {
-		String[] c = new String[a.length + b.length];
+	/**
+	 * Concatenates two arrays of objects.
+	 * @param a First array
+	 * @param b Second array
+	 * @return the concatenated array
+	 */
+	public static <T> T[] merge(T[] a, T[] b) {
+		T[] c = (T[]) new Object[a.length + b.length];
 		
 		for (int i = 0; i < a.length; i++)
 			c[i] = a[i];
