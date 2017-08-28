@@ -11,13 +11,13 @@ public class Arrays {
 	 */
 	public static <T> String[] eachToString(T[] data) {
 		String[] dataStrings = new String[data.length];
-		
+
 		for (int i = 0; i < data.length; i++)
 			dataStrings[i] = data[i].toString();
-		
+
 		return dataStrings;
 	}
-	
+
 	/**
 	 * Makes a String array of the String representation of each element in an
 	 * array of booleans.
@@ -27,13 +27,13 @@ public class Arrays {
 	 */
 	public static String[] eachToString(boolean[] data) {
 		String[] dataStrings = new String[data.length];
-		
+
 		for (int i = 0; i < data.length; i++)
 			dataStrings[i] = "" + data[i];
-		
+
 		return dataStrings;
 	}
-	
+
 	/**
 	 * Makes a String array of the String representation of each element in an
 	 * array of bytes.
@@ -43,13 +43,13 @@ public class Arrays {
 	 */
 	public static String[] eachToString(byte[] data) {
 		String[] dataStrings = new String[data.length];
-		
+
 		for (int i = 0; i < data.length; i++)
 			dataStrings[i] = "" + data[i];
-		
+
 		return dataStrings;
 	}
-	
+
 	/**
 	 * Makes a String array of the String representation of each element in an
 	 * array of chars.
@@ -59,13 +59,13 @@ public class Arrays {
 	 */
 	public static String[] eachToString(char[] data) {
 		String[] dataStrings = new String[data.length];
-		
+
 		for (int i = 0; i < data.length; i++)
 			dataStrings[i] = "" + data[i];
-		
+
 		return dataStrings;
 	}
-	
+
 	/**
 	 * Makes a String array of the String representation of each element in an
 	 * array of shorts.
@@ -75,13 +75,13 @@ public class Arrays {
 	 */
 	public static String[] eachToString(short[] data) {
 		String[] dataStrings = new String[data.length];
-		
+
 		for (int i = 0; i < data.length; i++)
 			dataStrings[i] = "" + data[i];
-		
+
 		return dataStrings;
 	}
-	
+
 	/**
 	 * Makes a String array of the String representation of each element in an
 	 * array of ints.
@@ -91,13 +91,13 @@ public class Arrays {
 	 */
 	public static String[] eachToString(int[] data) {
 		String[] dataStrings = new String[data.length];
-		
+
 		for (int i = 0; i < data.length; i++)
 			dataStrings[i] = "" + data[i];
-		
+
 		return dataStrings;
 	}
-	
+
 	/**
 	 * Makes a String array of the String representation of each element in an
 	 * array of longs.
@@ -107,13 +107,13 @@ public class Arrays {
 	 */
 	public static String[] eachToString(long[] data) {
 		String[] dataStrings = new String[data.length];
-		
+
 		for (int i = 0; i < data.length; i++)
 			dataStrings[i] = "" + data[i];
-		
+
 		return dataStrings;
 	}
-	
+
 	/**
 	 * Makes a String array of the String representation of each element in an
 	 * array of floats.
@@ -123,13 +123,13 @@ public class Arrays {
 	 */
 	public static String[] eachToString(float[] data) {
 		String[] dataStrings = new String[data.length];
-		
+
 		for (int i = 0; i < data.length; i++)
 			dataStrings[i] = "" + data[i];
-		
+
 		return dataStrings;
 	}
-	
+
 	/**
 	 * Makes a String array of the String representation of each element in an
 	 * array of doubles.
@@ -139,28 +139,28 @@ public class Arrays {
 	 */
 	public static String[] eachToString(double[] data) {
 		String[] dataStrings = new String[data.length];
-		
+
 		for (int i = 0; i < data.length; i++)
 			dataStrings[i] = "" + data[i];
-		
+
 		return dataStrings;
 	}
-	
+
 	/**
 	 * Concatenates two arrays of objects.
 	 * @param a First array
 	 * @param b Second array
 	 * @return the concatenated array
 	 */
-	public static <T> T[] merge(T[] a, T[] b) {
+	public static <T> T[] concatenate(T[] a, T[] b) {
 		T[] c = (T[]) new Object[a.length + b.length];
-		
+
 		for (int i = 0; i < a.length; i++)
 			c[i] = a[i];
 		for (int i = a.length; i < a.length + b.length; i++) {
 			c[i] = b[i - a.length];
 		}
-		
+
 		return c;
 	}
 }
