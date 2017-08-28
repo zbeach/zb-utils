@@ -1,3 +1,8 @@
+plugins {
+  // google-java-format-gradle-plugin
+  id 'com.github.sherter.google-java-format' version '0.6'
+}
+
 // Apply plugins
 apply plugin: 'java'
 apply plugin: 'java-library'
