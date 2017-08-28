@@ -2,7 +2,7 @@
 A set of utility functions for various purposes
 
 ## Build
-If you have Gradle installed, run `gradle build`. To wrap the build into a Windows executable, run `gradle createExe`
+If you have Gradle installed, run `gradle build`.
 
 Otherwise,
 - On **Linux** or **macOS**, in the project's root directory, run `./gradlew build`
