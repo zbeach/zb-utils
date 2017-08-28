@@ -36,3 +36,8 @@ model {
 	}
 }
 
+// Javadoc
+task makeJavadocs(type: Javadoc) {
+  source = sourceSets.main.allJava
+  classpath = configurations.compile
+}
