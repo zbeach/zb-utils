@@ -18,7 +18,7 @@ public class Arrays {
 
     return c;
   }
-  
+
   /**
    * Makes a String array of the String representation of each element in an array of objects.
    *
