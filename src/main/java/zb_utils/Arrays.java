@@ -2,6 +2,24 @@ package zb_utils;
 
 public class Arrays {
   /**
+   * Concatenates two arrays of Strings.
+   *
+   * @param a First array
+   * @param b Second array
+   * @return the concatenated array
+   */
+  public static String[] concatenate(String[] a, String[] b) {
+    String[] c = (String[]) new String[a.length + b.length];
+
+    for (int i = 0; i < a.length; i++) c[i] = a[i];
+    for (int i = a.length; i < a.length + b.length; i++) {
+      c[i] = b[i - a.length];
+    }
+
+    return c;
+  }
+  
+  /**
    * Makes a String array of the String representation of each element in an array of objects.
    *
    * @param <T>
@@ -126,23 +144,5 @@ public class Arrays {
     for (int i = 0; i < data.length; i++) dataStrings[i] = "" + data[i];
 
     return dataStrings;
-  }
-
-  /**
-   * Concatenates two arrays of objects.
-   *
-   * @param a First array
-   * @param b Second array
-   * @return the concatenated array
-   */
-  public static <T> T[] concatenate(T[] a, T[] b) {
-    T[] c = (T[]) new Object[a.length + b.length];
-
-    for (int i = 0; i < a.length; i++) c[i] = a[i];
-    for (int i = a.length; i < a.length + b.length; i++) {
-      c[i] = b[i - a.length];
-    }
-
-    return c;
   }
 }

@@ -129,18 +129,14 @@ public class ArraysTest {
   }
 
   @Test
-  public void testConcatenate_generic_array_generic_array() {
+  public void testConcatenate_String_array_String_array() {
     String[] a = {"", "a", "aa", "ab"};
     String[] b = {"", "z", "zz", "zy"};
-    Integer[] c = {new Integer(0), new Integer(1), new Integer(2)};
 
     String[] ab = {"", "a", "aa", "ab", "", "z", "zz", "zy"};
     String[] ab2 = {"", "", "a", "z"};
 
-    Object[] ac = {"", "a", "aa", "ab", new Integer(0), new Integer(1), new Integer(2)};
-
     assert (java.util.Arrays.equals(zb_utils.Arrays.concatenate(a, b), ab));
     assert (!java.util.Arrays.equals(zb_utils.Arrays.concatenate(a, b), ab2));
-    assert (java.util.Arrays.equals(zb_utils.Arrays.concatenate(a, c), ac));
   }
 }
