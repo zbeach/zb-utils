@@ -1,4 +1,4 @@
-# ZB Utils
+# ZB Utils [![Build Status](https://travis-ci.org/zbeach/zb-utils.svg?branch=master)](https://travis-ci.org/zbeach/zb-utils)
 A set of utility functions for various purposes
 
 ## Build
