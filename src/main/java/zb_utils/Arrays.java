@@ -147,139 +147,121 @@ public class Arrays {
 
     return dataStrings;
   }
-  
+
   /**
    * Searches an array for a matching object and returns its index.
-   * 
+   *
    * @param element Element to search for
    * @param data Array of elements
    * @return Index of the matching element
    */
   public static <T> int indexOf(T element, T[] data) {
-  	for (int i = 0; i < data.length; i++)
-  		if (data[i].equals(element))
-  			return i;
-  	
-  	throw new NoSuchElementException("Element not found.");
+    for (int i = 0; i < data.length; i++) if (data[i].equals(element)) return i;
+
+    throw new NoSuchElementException("Element not found.");
   }
-  
+
   /**
    * Searches an array for a matching boolean and returns its index.
-   * 
+   *
    * @param element Element to search for
    * @param data Array of elements
    * @return Index of the matching element
    */
   public static int indexOf(boolean element, boolean[] data) {
-  	for (int i = 0; i < data.length; i++)
-  		if (data[i] == element)
-  			return i;
-  	
-  	throw new NoSuchElementException("Element not found.");
+    for (int i = 0; i < data.length; i++) if (data[i] == element) return i;
+
+    throw new NoSuchElementException("Element not found.");
   }
-  
+
   /**
    * Searches an array for a matching byte and returns its index.
-   * 
+   *
    * @param element Element to search for
    * @param data Array of elements
    * @return Index of the matching element
    */
   public static int indexOf(byte element, byte[] data) {
-  	for (int i = 0; i < data.length; i++)
-  		if (data[i] == element)
-  			return i;
-  	
-  	throw new NoSuchElementException("Element not found.");
+    for (int i = 0; i < data.length; i++) if (data[i] == element) return i;
+
+    throw new NoSuchElementException("Element not found.");
   }
-  
+
   /**
    * Searches an array for a matching char and returns its index.
-   * 
+   *
    * @param element Element to search for
    * @param data Array of elements
    * @return Index of the matching element
    */
   public static int indexOf(char element, char[] data) {
-  	for (int i = 0; i < data.length; i++)
-  		if (data[i] == element)
-  			return i;
-  	
-  	throw new NoSuchElementException("Element not found.");
+    for (int i = 0; i < data.length; i++) if (data[i] == element) return i;
+
+    throw new NoSuchElementException("Element not found.");
   }
-  
+
   /**
    * Searches an array for a matching short and returns its index.
-   * 
+   *
    * @param element Element to search for
    * @param data Array of elements
    * @return Index of the matching element
    */
   public static int indexOf(short element, short[] data) {
-  	for (int i = 0; i < data.length; i++)
-  		if (data[i] == element)
-  			return i;
-  	
-  	throw new NoSuchElementException("Element not found.");
+    for (int i = 0; i < data.length; i++) if (data[i] == element) return i;
+
+    throw new NoSuchElementException("Element not found.");
   }
-  
+
   /**
    * Searches an array for a matching int and returns its index.
-   * 
+   *
    * @param element Element to search for
    * @param data Array of elements
    * @return Index of the matching element
    */
   public static int indexOf(int element, int[] data) {
-  	for (int i = 0; i < data.length; i++)
-  		if (data[i] == element)
-  			return i;
-  	
-  	throw new NoSuchElementException("Element not found.");
+    for (int i = 0; i < data.length; i++) if (data[i] == element) return i;
+
+    throw new NoSuchElementException("Element not found.");
   }
-  
+
   /**
    * Searches an array for a matching long and returns its index.
-   * 
+   *
    * @param element Element to search for
    * @param data Array of elements
    * @return Index of the matching element
    */
   public static int indexOf(long element, long[] data) {
-  	for (int i = 0; i < data.length; i++)
-  		if (data[i] == element)
-  			return i;
-  	
-  	throw new NoSuchElementException("Element not found.");
+    for (int i = 0; i < data.length; i++) if (data[i] == element) return i;
+
+    throw new NoSuchElementException("Element not found.");
   }
-  
+
   /**
    * Searches an array for a matching float and returns its index.
-   * 
+   *
    * @param element Element to search for
    * @param data Array of elements
    * @return Index of the matching element
    */
   public static int indexOf(float element, float[] data) {
-  	for (int i = 0; i < data.length; i++)
-  		if (data[i] == element)
-  			return i;
-  	
-  	throw new NoSuchElementException("Element not found.");
+    for (int i = 0; i < data.length; i++) if (data[i] == element) return i;
+
+    throw new NoSuchElementException("Element not found.");
   }
-  
+
   /**
    * Searches an array for a matching double and returns its index.
-   * 
+   *
    * @param element Element to search for
    * @param data Array of elements
    * @return Index of the matching element
    */
   public static double indexOf(double element, double[] data) {
-  	for (int i = 0; i < data.length; i++)
-  		if (data[i] == element)
-  			return i;
-  	
-  	throw new NoSuchElementException("Element not found.");
+    for (int i = 0; i < data.length; i++) if (data[i] == element) return i;
+
+    throw new NoSuchElementException("Element not found.");
   }
 }

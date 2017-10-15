@@ -12,7 +12,7 @@ public class ArraysTest {
     assert (java.util.Arrays.equals(zb_utils.Arrays.concatenate(a, b), ab));
     assert (!java.util.Arrays.equals(zb_utils.Arrays.concatenate(a, b), ab2));
   }
-  
+
   @Test
   public void testEachToString_T_array() {
     class Date {
@@ -134,48 +134,42 @@ public class ArraysTest {
 
     assert (java.util.Arrays.equals(zb_utils.Arrays.eachToString(doubles), doubleStrings));
   }
-  
+
   @Test
   public void testIndexOf_T_T_array() {
-  	String[] data = {
-  			"A", "B", "C", "D", "E"
-  	};
-  	
-  	assert(zb_utils.Arrays.indexOf("A", data) == 0);
-  	assert(zb_utils.Arrays.indexOf("B", data) == 1);
-  	assert(zb_utils.Arrays.indexOf("C", data) == 2);
-  	assert(zb_utils.Arrays.indexOf("D", data) == 3);
-  	assert(zb_utils.Arrays.indexOf("E", data) == 4);
+    String[] data = {"A", "B", "C", "D", "E"};
+
+    assert (zb_utils.Arrays.indexOf("A", data) == 0);
+    assert (zb_utils.Arrays.indexOf("B", data) == 1);
+    assert (zb_utils.Arrays.indexOf("C", data) == 2);
+    assert (zb_utils.Arrays.indexOf("D", data) == 3);
+    assert (zb_utils.Arrays.indexOf("E", data) == 4);
   }
-  
+
   @Test
   public void testIndexOf_boolean_boolean_array() {
-  	boolean[] data = {
-  			true, false, true, true, false
-  	};
-  	
-  	assert(zb_utils.Arrays.indexOf(true, data) == 0);
-  	assert(zb_utils.Arrays.indexOf(false, data) == 1);
+    boolean[] data = {true, false, true, true, false};
+
+    assert (zb_utils.Arrays.indexOf(true, data) == 0);
+    assert (zb_utils.Arrays.indexOf(false, data) == 1);
   }
-  
+
   @Test
   public void testIndexOf_byte_byte_array() {
-  	byte[] data = {
-  			-128, 127, -127, 126, -126, 125
-  	};
-  	
-  	byte b0 = -128;
-  	byte b1 = 127;
-  	byte b2 = -127;
-  	byte b3 = 126;
-  	byte b4 = -126;
-  	byte b5 = 125;
-  	
-  	assert(zb_utils.Arrays.indexOf(b0, data) == 0);
-  	assert(zb_utils.Arrays.indexOf(b1, data) == 1);
-  	assert(zb_utils.Arrays.indexOf(b2, data) == 2);
-  	assert(zb_utils.Arrays.indexOf(b3, data) == 3);
-  	assert(zb_utils.Arrays.indexOf(b4, data) == 4);
-  	assert(zb_utils.Arrays.indexOf(b5, data) == 5);
+    byte[] data = {-128, 127, -127, 126, -126, 125};
+
+    byte b0 = -128;
+    byte b1 = 127;
+    byte b2 = -127;
+    byte b3 = 126;
+    byte b4 = -126;
+    byte b5 = 125;
+
+    assert (zb_utils.Arrays.indexOf(b0, data) == 0);
+    assert (zb_utils.Arrays.indexOf(b1, data) == 1);
+    assert (zb_utils.Arrays.indexOf(b2, data) == 2);
+    assert (zb_utils.Arrays.indexOf(b3, data) == 3);
+    assert (zb_utils.Arrays.indexOf(b4, data) == 4);
+    assert (zb_utils.Arrays.indexOf(b5, data) == 5);
   }
 }
